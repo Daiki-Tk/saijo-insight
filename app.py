@@ -88,7 +88,11 @@ def quick_stats(df: pd.DataFrame, indicator: str, region: str = "西条市") -> 
     last = s.iloc[-1]
     delta = last["value"] - first["value"]
     unit = last["unit"]
-    pct = f"{(delta/first['value']*100):+.1f}%" if first["value"] not in [0, pd.NA] and pd.notna(first["value"]) else "-"
+    first_value = first["value"]
+    if pd.notna(first_value) and first_value != 0:
+        pct = f"{(delta / first_value * 100):+.1f}%"
+    else:
+        pct = "-"
     return format_value(last["value"], unit), f"{delta:,.0f}{unit}", pct
 
 def render_reading(df: pd.DataFrame) -> None:
