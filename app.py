@@ -262,6 +262,12 @@ def main() -> None:
             indicators = sorted([i for i in f[f["category"] == selected_category]["indicator"].dropna().astype(str).unique().tolist() if i])
             selected_indicator = st.selectbox("指標", indicators)
 
+        dataset_options = sorted(
+            f[(f["category"] == selected_category) & (f["indicator"] == selected_indicator) & (f["dataset_id"] == selected_dataset)]["dataset_id"].dropna().unique()
+        )
+
+        selected_dataset = st.selectbox("データセット", dataset_options)
+        
         base_filtered = f[(f["category"] == selected_category) & (f["indicator"] == selected_indicator)].copy()
         sex_options = [s for s in base_filtered["sex"].dropna().astype(str).unique().tolist() if s]
         default_sex = select_default_sex(sex_options)
