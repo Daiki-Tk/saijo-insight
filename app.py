@@ -289,7 +289,28 @@ def main():
             corr = merged["value_a"].corr(merged["value_b"]) if len(merged) >= 2 else None
             st.markdown(f"**相関係数（参考）**: {corr:.3f}" if corr is not None and pd.notna(corr) else "**相関係数（参考）**: 算出不可")
             st.dataframe(merged, use_container_width=True, hide_index=True)
+# 共通年で結合
+merged = pd.merge(
+    df1[['year_num', 'value']],
+    df2[['year_num', 'value']],
+    on='year_num',
+    suffixes=('_A', '_B')
+)
 
+if not merged.empty:
+    import plotly.express as px
+
+    fig = px.scatter(
+        merged,
+        x='value_A',
+        y='value_B',
+        trendline="ols"
+    )
+    st.plotly_chart(fig)
+
+    # 相関係数
+    corr = merged['value_A'].corr(merged['value_B'])
+    st.metric("相関係数", f"{corr:.2f}")
     with tab_catalog:
         st.subheader("データカタログ")
         c1, c2, c3 = st.columns(3)
