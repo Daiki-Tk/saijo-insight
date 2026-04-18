@@ -1,5 +1,6 @@
-dataset_id,category,subcategory,indicator_scope,data_kind,year_type,source,strictly_comparable,status
-population_trend,人口,人口推移,世帯数 / 総人口 / 男女別人口,actual,calendar,2026年版 11.世帯数、人口の推移,true,実装済み
-population_projection,人口,将来推計,未収録,projection,calendar,今後追加,false,次フェーズ
-industry_overview,産業,事業所,未収録,actual,mixed,2026年版 21-22表を予定,false,次フェーズ
-finance_overview,財政,主要指標,未収録,actual,mixed,2026年版 財政表を予定,false,次フェーズ
+﻿dataset_id,category,subcategory,indicator_scope,data_kind,year_type,source,strictly_comparable,status
+population_trend,人口,人口推移,世帯数 / 総人口 / 男女別人口,actual,calendar,2026年版 11.世帯数、人口の推移,True,実装済み
+population_projection,人口,将来推計,未収録,projection,calendar,今後追加,False,次フェーズ
+industry_overview,産業,事業所,未収録,actual,mixed,2026年版 21-22表を予定,False,次フェーズ
+finance_overview,財政,主要指標,未収録,actual,mixed,2026年版 財政表を予定,False,次フェーズ
+industry_offices,産業,事業所,事業所数 / 従業者数（総数・民営・公務）,actual,calendar,2026年版 22.産業大分類別事業所数および従業者数,true,実装済み
