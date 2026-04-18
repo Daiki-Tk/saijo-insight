@@ -1,9 +1,0 @@
-dataset_id,category,subcategory,indicator,region,year_label,year_num,fiscal_or_calendar,value,unit,sex,data_kind,comparable
-industry_employment,産業,就業,就業者数,西条市,2010年,2010,calendar,52000,人,総数,actual,True
-industry_employment,産業,就業,就業者数,西条市,2012年,2012,calendar,51000,人,総数,actual,True
-industry_employment,産業,就業,就業者数,西条市,2014年,2014,calendar,50500,人,総数,actual,True
-industry_employment,産業,就業,就業者数,西条市,2016年,2016,calendar,49500,人,総数,actual,True
-industry_employment,産業,就業,就業者数,西条市,2018年,2018,calendar,48000,人,総数,actual,True
-industry_employment,産業,就業,就業者数,西条市,2020年,2020,calendar,47000,人,総数,actual,True
-industry_employment,産業,就業,就業者数,西条市,2022年,2022,calendar,46000,人,総数,actual,True
-industry_employment,産業,就業,就業者数,西条市,2024年,2024,calendar,45000,人,総数,actual,True

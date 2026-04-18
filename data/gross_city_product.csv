@@ -1,4 +1,0 @@
-﻿dataset_id,category,subcategory,indicator,region,year_label,year_num,fiscal_or_calendar,value,unit,sex,data_kind,comparable,source_title,source_table,source_yearbook,source_department,notes
-gross_city_product,経済,市民所得,市内総生産,西条市,令和2年度,2020,fiscal,408603,百万円,na,actual,True,西条市統計データ（2026年版）,47.西条市内総生産,2026,総務部,愛媛県市町民所得統計
-gross_city_product,経済,市民所得,市内総生産,西条市,令和3年度,2021,fiscal,448978,百万円,na,actual,True,西条市統計データ（2026年版）,47.西条市内総生産,2026,総務部,愛媛県市町民所得統計
-gross_city_product,経済,市民所得,市内総生産,西条市,令和4年度,2022,fiscal,509620,百万円,na,actual,True,西条市統計データ（2026年版）,47.西条市内総生産,2026,総務部,愛媛県市町民所得統計

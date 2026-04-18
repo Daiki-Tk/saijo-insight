@@ -1,9 +1,0 @@
-﻿dataset_id,category,subcategory,indicator,region,year_label,year_num,fiscal_or_calendar,value,unit,sex,data_kind,comparable,source_title,source_table,source_yearbook,source_department,notes
-industry_offices,産業,事業所,事業所数,西条市,平成28年,2016,calendar,4852,所,na,actual,True,西条市統計データ（2026年版）,22.産業大分類別事業所数および従業者数,2026,総務部,経済センサス‐活動調査（各年6月1日現在、平成28年は民営のみ）
-industry_offices,産業,事業所,従業者数,西条市,平成28年,2016,calendar,42405,人,na,actual,True,西条市統計データ（2026年版）,22.産業大分類別事業所数および従業者数,2026,総務部,経済センサス‐活動調査（各年6月1日現在、平成28年は民営のみ）
-industry_offices,産業,事業所,事業所数,西条市,令和3年,2021,calendar,4690,所,na,actual,True,西条市統計データ（2026年版）,22.産業大分類別事業所数および従業者数,2026,総務部,総数
-industry_offices,産業,事業所,従業者数,西条市,令和3年,2021,calendar,45630,人,na,actual,True,西条市統計データ（2026年版）,22.産業大分類別事業所数および従業者数,2026,総務部,総数
-industry_offices,産業,事業所（民営）,事業所数,西条市,令和3年,2021,calendar,4471,所,na,actual,True,西条市統計データ（2026年版）,22.産業大分類別事業所数および従業者数,2026,総務部,民営
-industry_offices,産業,事業所（民営）,従業者数,西条市,令和3年,2021,calendar,41786,人,na,actual,True,西条市統計データ（2026年版）,22.産業大分類別事業所数および従業者数,2026,総務部,民営
-industry_offices,産業,事業所（公務）,事業所数,西条市,令和3年,2021,calendar,219,所,na,actual,True,西条市統計データ（2026年版）,22.産業大分類別事業所数および従業者数,2026,総務部,国・地方公共団体
-industry_offices,産業,事業所（公務）,従業者数,西条市,令和3年,2021,calendar,3844,人,na,actual,True,西条市統計データ（2026年版）,22.産業大分類別事業所数および従業者数,2026,総務部,国・地方公共団体
