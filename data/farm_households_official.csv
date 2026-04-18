@@ -1,0 +1,13 @@
+﻿dataset_id,category,subcategory,indicator,region,year_label,year_num,value,unit,data_kind,source_table
+farm_households_official,産業,農業,総農家数,西条市,平成17年,2005,5322,戸,actual,24. 農家数の推移
+farm_households_official,産業,農業,販売農家数,西条市,平成17年,2005,3881,戸,actual,24. 農家数の推移
+farm_households_official,産業,農業,自給的農家数,西条市,平成17年,2005,1441,戸,actual,24. 農家数の推移
+farm_households_official,産業,農業,総農家数,西条市,平成22年,2010,4703,戸,actual,24. 農家数の推移
+farm_households_official,産業,農業,販売農家数,西条市,平成22年,2010,3272,戸,actual,24. 農家数の推移
+farm_households_official,産業,農業,自給的農家数,西条市,平成22年,2010,1431,戸,actual,24. 農家数の推移
+farm_households_official,産業,農業,総農家数,西条市,平成27年,2015,3879,戸,actual,24. 農家数の推移
+farm_households_official,産業,農業,販売農家数,西条市,平成27年,2015,2616,戸,actual,24. 農家数の推移
+farm_households_official,産業,農業,自給的農家数,西条市,平成27年,2015,1263,戸,actual,24. 農家数の推移
+farm_households_official,産業,農業,総農家数,西条市,令和2年,2020,3172,戸,actual,24. 農家数の推移
+farm_households_official,産業,農業,販売農家数,西条市,令和2年,2020,2027,戸,actual,24. 農家数の推移
+farm_households_official,産業,農業,自給的農家数,西条市,令和2年,2020,1145,戸,actual,24. 農家数の推移

@@ -1,0 +1,21 @@
+﻿dataset_id,category,subcategory,indicator,region,year_label,year_num,value,unit,data_kind,source_table
+fishery_entities_official,産業,漁業,総数,西条市,平成15年,2003,318,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,個人,西条市,平成15年,2003,308,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,会社,西条市,平成15年,2003,7,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,共同経営,西条市,平成15年,2003,3,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,総数,西条市,平成20年,2008,233,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,個人,西条市,平成20年,2008,226,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,会社,西条市,平成20年,2008,5,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,共同経営,西条市,平成20年,2008,2,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,総数,西条市,平成25年,2013,187,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,個人,西条市,平成25年,2013,179,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,会社,西条市,平成25年,2013,6,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,共同経営,西条市,平成25年,2013,2,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,総数,西条市,平成30年,2018,113,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,個人,西条市,平成30年,2018,109,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,会社,西条市,平成30年,2018,4,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,共同経営,西条市,平成30年,2018,0,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,総数,西条市,令和5年,2023,90,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,個人,西条市,令和5年,2023,86,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,会社,西条市,令和5年,2023,4,経営体,actual,34. 漁業経営体数
+fishery_entities_official,産業,漁業,共同経営,西条市,令和5年,2023,0,経営体,actual,34. 漁業経営体数

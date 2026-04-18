@@ -1,0 +1,21 @@
+﻿dataset_id,category,subcategory,indicator,region,year_label,year_num,value,unit,data_kind,source_table
+census_population_households_official,人口,国勢調査,世帯数,西条市,平成12年,2000,41298,世帯,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,人口総数,西条市,平成12年,2000,114548,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,男,西条市,平成12年,2000,54662,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,女,西条市,平成12年,2000,59886,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,世帯数,西条市,平成17年,2005,43102,世帯,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,人口総数,西条市,平成17年,2005,113371,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,男,西条市,平成17年,2005,54144,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,女,西条市,平成17年,2005,59227,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,世帯数,西条市,平成22年,2010,44630,世帯,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,人口総数,西条市,平成22年,2010,112091,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,男,西条市,平成22年,2010,53757,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,女,西条市,平成22年,2010,58334,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,世帯数,西条市,平成27年,2015,44595,世帯,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,人口総数,西条市,平成27年,2015,108174,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,男,西条市,平成27年,2015,51807,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,女,西条市,平成27年,2015,56367,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,世帯数,西条市,令和2年,2020,45193,世帯,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,人口総数,西条市,令和2年,2020,104791,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,男,西条市,令和2年,2020,50615,人,actual,15. 国勢調査人口・世帯数の推移
+census_population_households_official,人口,国勢調査,女,西条市,令和2年,2020,54176,人,actual,15. 国勢調査人口・世帯数の推移

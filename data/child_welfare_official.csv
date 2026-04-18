@@ -1,0 +1,17 @@
+﻿dataset_id,category,subcategory,indicator,region,year_label,year_num,value,unit,data_kind
+child_welfare_official,福祉,児童,児童手当_受給世帯数,西条市,令和3年,2021,7312,世帯,actual
+child_welfare_official,福祉,児童,児童手当_金額,西条市,令和3年,2021,1653930,千円,actual
+child_welfare_official,福祉,児童,児童扶養手当_受給世帯数,西条市,令和3年,2021,939,世帯,actual
+child_welfare_official,福祉,児童,児童扶養手当_金額,西条市,令和3年,2021,461848,千円,actual
+child_welfare_official,福祉,児童,児童手当_受給世帯数,西条市,令和4年,2022,6980,世帯,actual
+child_welfare_official,福祉,児童,児童手当_金額,西条市,令和4年,2022,1600275,千円,actual
+child_welfare_official,福祉,児童,児童扶養手当_受給世帯数,西条市,令和4年,2022,893,世帯,actual
+child_welfare_official,福祉,児童,児童扶養手当_金額,西条市,令和4年,2022,429708,千円,actual
+child_welfare_official,福祉,児童,児童手当_受給世帯数,西条市,令和5年,2023,6768,世帯,actual
+child_welfare_official,福祉,児童,児童手当_金額,西条市,令和5年,2023,1540855,千円,actual
+child_welfare_official,福祉,児童,児童扶養手当_受給世帯数,西条市,令和5年,2023,858,世帯,actual
+child_welfare_official,福祉,児童,児童扶養手当_金額,西条市,令和5年,2023,415708,千円,actual
+child_welfare_official,福祉,児童,児童手当_受給世帯数,西条市,令和6年,2024,7874,世帯,actual
+child_welfare_official,福祉,児童,児童手当_金額,西条市,令和6年,2024,1739265,千円,actual
+child_welfare_official,福祉,児童,児童扶養手当_受給世帯数,西条市,令和6年,2024,851,世帯,actual
+child_welfare_official,福祉,児童,児童扶養手当_金額,西条市,令和6年,2024,423405,千円,actual

@@ -1,0 +1,9 @@
+﻿dataset_id,category,subcategory,indicator,region,year_label,year_num,value,unit,data_kind,source_table
+day_night_population_official,人口,移動,常住人口（夜間人口）,西条市,令和2年,2020,104791,人,actual,19. 夜間人口・昼間人口・流入流出人口
+day_night_population_official,人口,移動,従業地・通学地人口（昼間人口）,西条市,令和2年,2020,101668,人,actual,19. 夜間人口・昼間人口・流入流出人口
+day_night_population_official,人口,移動,流入_総数,西条市,令和2年,2020,7663,人,actual,19. 夜間人口・昼間人口・流入流出人口
+day_night_population_official,人口,移動,流入_就業者,西条市,令和2年,2020,7478,人,actual,19. 夜間人口・昼間人口・流入流出人口
+day_night_population_official,人口,移動,流入_通学者,西条市,令和2年,2020,185,人,actual,19. 夜間人口・昼間人口・流入流出人口
+day_night_population_official,人口,移動,流出_総数,西条市,令和2年,2020,10786,人,actual,19. 夜間人口・昼間人口・流入流出人口
+day_night_population_official,人口,移動,流出_就業者,西条市,令和2年,2020,9379,人,actual,19. 夜間人口・昼間人口・流入流出人口
+day_night_population_official,人口,移動,流出_通学者,西条市,令和2年,2020,1407,人,actual,19. 夜間人口・昼間人口・流入流出人口
