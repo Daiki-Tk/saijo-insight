@@ -1,0 +1,11 @@
+dataset_id,category,subcategory,indicator,region,year_label,year_num,fiscal_or_calendar,value,unit,sex,data_kind,comparable
+finance_total,財政,一般会計,歳入総額,西条市,2015年度,2015,fiscal,40000,百万円,na,actual,True
+finance_total,財政,一般会計,歳入総額,西条市,2016年度,2016,fiscal,42000,百万円,na,actual,True
+finance_total,財政,一般会計,歳入総額,西条市,2017年度,2017,fiscal,41000,百万円,na,actual,True
+finance_total,財政,一般会計,歳入総額,西条市,2018年度,2018,fiscal,43000,百万円,na,actual,True
+finance_total,財政,一般会計,歳入総額,西条市,2019年度,2019,fiscal,45000,百万円,na,actual,True
+finance_total,財政,一般会計,歳入総額,西条市,2020年度,2020,fiscal,47000,百万円,na,actual,True
+finance_total,財政,一般会計,歳入総額,西条市,2021年度,2021,fiscal,46000,百万円,na,actual,True
+finance_total,財政,一般会計,歳入総額,西条市,2022年度,2022,fiscal,48000,百万円,na,actual,True
+finance_total,財政,一般会計,歳入総額,西条市,2023年度,2023,fiscal,50000,百万円,na,actual,True
+finance_total,財政,一般会計,歳入総額,西条市,2024年度,2024,fiscal,52000,百万円,na,actual,True
