@@ -20,9 +20,7 @@ SEX_LABELS = {
 }
 
 DATASET_LABELS = {
-    "population_trend": "人口（旧データ）",
-    "population_full": "人口（強化版）",
-    "industry_offices": "事業所・従業者数",
+    "population_full": "総人口（2010-2025）",
     "industry_employment": "就業者数",
     "finance_total": "歳入総額",
 }
