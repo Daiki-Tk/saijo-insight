@@ -20,7 +20,9 @@ SEX_LABELS = {
 }
 
 DATASET_LABELS = {
-    "population_full": "総人口（2010-2025）",
+    "population_trend": "人口（旧データ）",
+    "population_full": "人口（強化版）",
+    "industry_offices": "事業所・従業者数",
     "industry_employment": "就業者数",
     "finance_total": "歳入総額",
 }
@@ -37,6 +39,7 @@ def load_all_data() -> pd.DataFrame:
             frames.append(df)
         except Exception:
             continue
+
     if not frames:
         return pd.DataFrame()
 
@@ -46,7 +49,6 @@ def load_all_data() -> pd.DataFrame:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
 
-    # sex を日本語ラベル化しつつ元値も保持
     if "sex" in df.columns:
         df["sex"] = df["sex"].astype(str)
         df["sex_label"] = df["sex"].map(lambda x: SEX_LABELS.get(x, x))
@@ -84,6 +86,7 @@ def format_value(value, unit="") -> str:
 def normalize_financial_unit(df: pd.DataFrame) -> tuple[pd.DataFrame, str]:
     out = df.copy()
     if out.empty or "unit" not in out.columns:
+        out["display_value"] = out["value"] if "value" in out.columns else None
         return out, ""
 
     unit = str(out["unit"].iloc[0])
@@ -100,14 +103,27 @@ def normalize_financial_unit(df: pd.DataFrame) -> tuple[pd.DataFrame, str]:
 
     return out, display_unit
 
+def clean_series_for_trend(df: pd.DataFrame) -> pd.DataFrame:
+    out = df.copy()
+    out = out.dropna(subset=["year_num", "value"]).sort_values("year_num")
+
+    if out.empty:
+        return out
+
+    # 総数を優先
+    if "sex_label" in out.columns and "総数" in out["sex_label"].values:
+        out = out[out["sex_label"] == "総数"].copy()
+
+    # 同一年に複数行ある場合は dataset 内で最後の1件に絞る
+    out = out.sort_values(["year_num"]).drop_duplicates(subset=["year_num"], keep="last")
+
+    return out
+
 def quick_stats(df: pd.DataFrame, indicator: str, region: str = "西条市") -> tuple[str, str, str]:
     s = df[(df["indicator"] == indicator) & (df["region"] == region)].copy()
-    s = s.dropna(subset=["year_num", "value"]).sort_values("year_num")
+    s = clean_series_for_trend(s)
     if s.empty:
         return "-", "-", "-"
-    # 総数優先
-    if "sex_label" in s.columns and "総数" in s["sex_label"].values:
-        s = s[s["sex_label"] == "総数"]
 
     first = s.iloc[0]
     last = s.iloc[-1]
@@ -118,7 +134,7 @@ def quick_stats(df: pd.DataFrame, indicator: str, region: str = "西条市") -> 
     return format_value(last["value"], unit), f"{delta:,.0f}{unit}", pct
 
 def render_reading(df: pd.DataFrame) -> None:
-    ordered = df.dropna(subset=["year_num", "value"]).sort_values("year_num")
+    ordered = clean_series_for_trend(df)
     if len(ordered) < 2:
         st.info("読み取り補助を表示するには、2点以上の時系列データが必要です。")
         return
@@ -148,10 +164,7 @@ def render_reading(df: pd.DataFrame) -> None:
 
 def get_series(df: pd.DataFrame, indicator: str, region: str = "西条市") -> pd.DataFrame:
     out = df[(df["indicator"] == indicator) & (df["region"] == region)].copy()
-    out = out.dropna(subset=["year_num", "value"]).sort_values("year_num")
-    if "sex_label" in out.columns and "総数" in out["sex_label"].values:
-        out = out[out["sex_label"] == "総数"]
-    return out
+    return clean_series_for_trend(out)
 
 def main() -> None:
     f = load_all_data()
@@ -244,15 +257,19 @@ def main() -> None:
             (f["dataset_id"] == selected_dataset)
         ].copy()
 
+        # 総数があるなら強制的に総数を優先
+        if "sex_label" in filtered.columns and "総数" in filtered["sex_label"].values:
+            filtered = filtered[filtered["sex_label"] == "総数"].copy()
+
         with col5:
             sex_options = sorted(filtered["sex_label"].dropna().astype(str).unique()) if not filtered.empty else ["区分なし"]
             default_sex_index = sex_options.index("総数") if "総数" in sex_options else 0
             selected_sex = st.selectbox("区分", sex_options, index=default_sex_index)
 
         if "sex_label" in filtered.columns:
-            filtered = filtered[filtered["sex_label"].astype(str) == selected_sex]
+            filtered = filtered[filtered["sex_label"].astype(str) == selected_sex].copy()
 
-        filtered = filtered.dropna(subset=["year_num", "value"]).sort_values("year_num")
+        filtered = clean_series_for_trend(filtered)
 
         if filtered.empty:
             st.warning("この条件に合うデータがありません。")
